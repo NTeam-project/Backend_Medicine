@@ -8,10 +8,10 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Medicine_category {
+public class MedicineCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long medicine_category_id;
+    private Long category_id;
 
-    private String medicine_category_name;
+    private String categoryName;
 }

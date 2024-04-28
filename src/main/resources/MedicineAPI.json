@@ -1,0 +1,158 @@
+[
+  {
+    "medicine_id": 1,
+    "medicine_name": "어린이부루펜시럽(이부프로펜)",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "어린이용 해열제(수정 예정)",
+    "instructions": "1일 3-4회 경구투여.",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 2,
+    "medicine_name": "어린이용타이레놀정80밀리그람",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 3,
+    "medicine_name": "어린이타이레놀현탁액",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 4,
+    "medicine_name": "타이레놀정160밀리그람 (아세트아미노펜)",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 5,
+    "medicine_name": "타이레놀정500밀리그람 (아세트아미노펜)",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 6,
+    "medicine_name": "판콜에이내복액",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 7,
+    "medicine_name": "판피린티정",
+    "medicineCategory": {
+      "category_id": 1,
+      "category_name": "해열.진통.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 8,
+    "medicine_name": "닥터베아제정",
+    "medicineCategory": {
+      "category_id": 2,
+      "category_name": "건위소화제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 9,
+    "medicine_name": "베아제정",
+    "medicineCategory": {
+      "category_id": 2,
+      "category_name": "건위소화제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 10,
+    "medicine_name": "훼스탈골드정",
+    "medicineCategory": {
+      "category_id": 2,
+      "category_name": "건위소화제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 11,
+    "medicine_name": "훼스탈플러스정",
+    "medicineCategory": {
+      "category_id": 2,
+      "category_name": "건위소화제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 12,
+    "medicine_name": "신신파스아렉스",
+    "medicineCategory": {
+      "category_id": 3,
+      "category_name": "진통.진양.수렴.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  },
+  {
+    "medicine_id": 13,
+    "medicine_name": "제일쿨파프",
+    "medicineCategory": {
+      "category_id": 3,
+      "category_name": "진통.진양.수렴.소염제"
+    },
+    "medicine_efficacy": "",
+    "instructions": "",
+    "medicine_caution": "",
+    "medicine_side_effect": ""
+  }
+]
