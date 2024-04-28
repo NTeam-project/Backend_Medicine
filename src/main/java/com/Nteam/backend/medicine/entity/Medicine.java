@@ -1,6 +1,6 @@
 package com.Nteam.backend.medicine.entity;
 
-import com.Nteam.backend.medicine.entity.Medicine_category;
+import com.Nteam.backend.medicine.dto.MedicineDto;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,6 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Getter
+@Table(name = "medicine_table")
 public class Medicine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,8 +19,8 @@ public class Medicine {
     private String medicine_name;
 
     @ManyToOne
-    @JoinColumn(name="medicine_category_id")
-    private Medicine_category medicineCategory;
+    @JoinColumn(name="category_id")
+    private MedicineCategory medicineCategory;
 
     private String medicine_efficacy;
 
@@ -28,4 +29,15 @@ public class Medicine {
     private String medicine_caution;
 
     private String medicine_side_effect;
+
+    public static Medicine toMedicine(MedicineDto medicineDto){
+        Medicine medicine = new Medicine();
+        medicine.setMedicine_id(medicineDto.getMedicine_id());
+        medicine.setMedicine_name(medicineDto.getMedicine_name());
+        medicine.setMedicineCategory(medicineDto.getMedicineCategory());
+        medicine.setInstructions(medicineDto.getInstructions());
+        medicine.setMedicine_caution(medicineDto.getMedicine_caution());
+        medicine.setMedicine_efficacy(medicineDto.getMedicine_efficacy());
+        return medicine;
+    }
 }
