@@ -25,24 +25,24 @@ public class MedicineDataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // Medicine API json 파일의 경로
-        String medicineCategoryAPIPath = "MedicineCategoryAPI.json";
+//        String medicineCategoryAPIPath = "MedicineCategoryAPI.json";
         String medicineAPIPath = "MedicineAPI.json";
 
         try {
-            InputStream categoryInputStream = new ClassPathResource(medicineCategoryAPIPath).getInputStream();
-            ObjectMapper categoryObjectMapper = new ObjectMapper();
-            JsonNode categoryRootNode = categoryObjectMapper.readTree(categoryInputStream);
-
-            // MedicineCategory 저장
-            JsonNode categoriesNode = categoryRootNode.get("medicineCategory");
-            if (categoriesNode != null && categoriesNode.isArray()) {
-                for (JsonNode categoryNode : categoriesNode) {
-                    MedicineCategory category = new MedicineCategory();
-                    category.setCategory_id(categoryNode.get("category_id").asLong());
-                    category.setCategoryName(categoryNode.get("category_name").asText());
-                    medicineCategoryRepository.save(category);
-                }
-            }
+//            InputStream categoryInputStream = new ClassPathResource(medicineCategoryAPIPath).getInputStream();
+//            ObjectMapper categoryObjectMapper = new ObjectMapper();
+//            JsonNode categoryRootNode = categoryObjectMapper.readTree(categoryInputStream);
+//
+//            // MedicineCategory 저장
+//            JsonNode categoriesNode = categoryRootNode.get("medicineCategory");
+//            if (categoriesNode != null && categoriesNode.isArray()) {
+//                for (JsonNode categoryNode : categoriesNode) {
+//                    MedicineCategory category = new MedicineCategory();
+//                    category.setCategory_id(categoryNode.get("category_id").asLong());
+//                    category.setCategoryName(categoryNode.get("category_name").asText());
+//                    medicineCategoryRepository.save(category);
+//                }
+//            }
 
             // Medicine 저장
             InputStream medicineInputStream = new ClassPathResource(medicineAPIPath).getInputStream();
@@ -64,9 +64,13 @@ public class MedicineDataLoader implements CommandLineRunner {
                     if (categoryNode != null) {
                         String categoryName = categoryNode.get("category_name").asText();
                         MedicineCategory category = medicineCategoryRepository.findByCategoryName(categoryName);
-                        if (category != null) {
-                            medicine.setMedicineCategory(category);
+                        if (category == null) {
+                            // 카테고리가 존재하지 않으면 새로운 카테고리를 생성하여 저장
+                            category = new MedicineCategory();
+                            category.setCategoryName(categoryName);
+                            category = medicineCategoryRepository.save(category);
                         }
+                        medicine.setMedicineCategory(category);
                     }
 
                     medicineRepository.save(medicine);
