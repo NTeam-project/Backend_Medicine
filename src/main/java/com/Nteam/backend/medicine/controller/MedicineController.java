@@ -1,6 +1,5 @@
 package com.Nteam.backend.medicine.controller;
 
-import com.Nteam.backend.medicine.dto.MedicineDto;
 import com.Nteam.backend.medicine.dto.MedicineElementDto;
 import com.Nteam.backend.medicine.entity.Medicine;
 import com.Nteam.backend.medicine.repository.MedicineRepository;
@@ -23,6 +22,7 @@ public class MedicineController {
 
     @Autowired
     private MedicineService medicineService;
+
     // 상비약 전체 조회
     @GetMapping("")
     public List<Medicine> getAllMedicines() {

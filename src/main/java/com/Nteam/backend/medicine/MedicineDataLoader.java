@@ -24,26 +24,10 @@ public class MedicineDataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Medicine API json 파일의 경로
-//        String medicineCategoryAPIPath = "MedicineCategoryAPI.json";
+        // Medicine API json 파일
         String medicineAPIPath = "MedicineAPI.json";
 
         try {
-//            InputStream categoryInputStream = new ClassPathResource(medicineCategoryAPIPath).getInputStream();
-//            ObjectMapper categoryObjectMapper = new ObjectMapper();
-//            JsonNode categoryRootNode = categoryObjectMapper.readTree(categoryInputStream);
-//
-//            // MedicineCategory 저장
-//            JsonNode categoriesNode = categoryRootNode.get("medicineCategory");
-//            if (categoriesNode != null && categoriesNode.isArray()) {
-//                for (JsonNode categoryNode : categoriesNode) {
-//                    MedicineCategory category = new MedicineCategory();
-//                    category.setCategory_id(categoryNode.get("category_id").asLong());
-//                    category.setCategoryName(categoryNode.get("category_name").asText());
-//                    medicineCategoryRepository.save(category);
-//                }
-//            }
-
             // Medicine 저장
             InputStream medicineInputStream = new ClassPathResource(medicineAPIPath).getInputStream();
             ObjectMapper medicineObjectMapper = new ObjectMapper();

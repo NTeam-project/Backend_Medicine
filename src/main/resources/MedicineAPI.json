@@ -9,7 +9,8 @@
     "medicine_efficacy": "어린이용 해열제(수정 예정)",
     "instructions": "1일 3-4회 경구투여.",
     "medicine_caution": "",
-    "medicine_side_effect": ""
+    "medicine_side_effect": "",
+
   },
   {
     "medicine_id": 2,
