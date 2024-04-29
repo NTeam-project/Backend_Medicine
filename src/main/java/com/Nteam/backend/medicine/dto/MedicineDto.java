@@ -24,17 +24,17 @@ public class MedicineDto {
 
     private String medicine_side_effect;
 
-    public static MedicineDto MedicineDTO(Medicine medicine){
-        MedicineDto memberDTO = new MedicineDto();
-        memberDTO.setMedicine_id(medicine.getMedicine_id());
-        memberDTO.setMedicine_name(medicine.getMedicine_name());
-        memberDTO.setMedicineCategory(medicine.getMedicineCategory());
-        memberDTO.setMedicine_efficacy(medicine.getMedicine_efficacy());
-        memberDTO.setInstructions(medicine.getInstructions());
-        memberDTO.setMedicine_caution(medicine.getMedicine_caution());
-        memberDTO.setMedicine_side_effect(medicine.getMedicine_side_effect());
+    public static MedicineDto medicineDto(Medicine medicine){
+        MedicineDto medicineDto = new MedicineDto();
+        medicineDto.setMedicine_id(medicine.getMedicine_id());
+        medicineDto.setMedicine_name(medicine.getMedicine_name());
+        medicineDto.setMedicineCategory(medicine.getMedicineCategory());
+        medicineDto.setMedicine_efficacy(medicine.getMedicine_efficacy());
+        medicineDto.setInstructions(medicine.getInstructions());
+        medicineDto.setMedicine_caution(medicine.getMedicine_caution());
+        medicineDto.setMedicine_side_effect(medicine.getMedicine_side_effect());
 
-        return memberDTO;
+        return medicineDto;
     }
 }
 
