@@ -14,11 +14,14 @@ public class MedicineElementDto {
 
     private String medicine_name;
 
+    private String medicine_image;
+
     private MedicineCategory medicineCategory;
 
     public MedicineElementDto(Medicine medicine) {
         this.medicine_id = medicine.getMedicine_id();
         this.medicine_name = medicine.getMedicine_name();
+        this.medicine_image = medicine.getMedicine_image();
         this.medicineCategory = medicine.getMedicineCategory();
     }
 }

@@ -13,8 +13,6 @@ import java.util.Optional;
 
 @Repository
 public interface MedicineRepository extends JpaRepository<Medicine, Long> {
-
     List<Medicine> findAll();
 
-//    Optional<Medicine> findByMedicineCategoryCategory_id(Long category_id);
 }

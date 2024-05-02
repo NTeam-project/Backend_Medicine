@@ -14,6 +14,8 @@ public class MedicineDto {
 
     private String medicine_name;
 
+    private String medicine_image;
+
     private MedicineCategory medicineCategory;
 
     private String medicine_efficacy;
@@ -28,6 +30,7 @@ public class MedicineDto {
         MedicineDto medicineDto = new MedicineDto();
         medicineDto.setMedicine_id(medicine.getMedicine_id());
         medicineDto.setMedicine_name(medicine.getMedicine_name());
+        medicineDto.setMedicine_image(medicine.getMedicine_image());
         medicineDto.setMedicineCategory(medicine.getMedicineCategory());
         medicineDto.setMedicine_efficacy(medicine.getMedicine_efficacy());
         medicineDto.setInstructions(medicine.getInstructions());

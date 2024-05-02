@@ -38,6 +38,7 @@ public class MedicineDataLoader implements CommandLineRunner {
                     Medicine medicine = new Medicine();
                     medicine.setMedicine_id(medicineNode.get("medicine_id").asLong());
                     medicine.setMedicine_name(medicineNode.get("medicine_name").asText());
+                    medicine.setMedicine_image(medicineNode.get("medicine_image").asText());
                     medicine.setMedicine_efficacy(medicineNode.get("medicine_efficacy").asText());
                     medicine.setInstructions(medicineNode.get("instructions").asText());
                     medicine.setMedicine_caution(medicineNode.get("medicine_caution").asText());

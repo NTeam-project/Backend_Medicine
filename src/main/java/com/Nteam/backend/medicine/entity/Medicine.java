@@ -18,6 +18,7 @@ public class Medicine {
 
     private String medicine_name;
 
+    private String medicine_image;
     @ManyToOne
     @JoinColumn(name="category_id")
     private MedicineCategory medicineCategory;
@@ -34,6 +35,7 @@ public class Medicine {
         Medicine medicine = new Medicine();
         medicine.setMedicine_id(medicineDto.getMedicine_id());
         medicine.setMedicine_name(medicineDto.getMedicine_name());
+        medicine.setMedicine_image(medicineDto.getMedicine_image());
         medicine.setMedicineCategory(medicineDto.getMedicineCategory());
         medicine.setInstructions(medicineDto.getInstructions());
         medicine.setMedicine_caution(medicineDto.getMedicine_caution());

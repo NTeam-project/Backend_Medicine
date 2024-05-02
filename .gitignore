@@ -5,6 +5,9 @@
 
 **/resources/application.properties
 **/resources/application.yml
+**/resources/static/images
+**/resources/MedicineAPI.json
+**/resources/MedicineCategoryAPI.json
 
 HELP.md
 !**/.DS_Store/**
